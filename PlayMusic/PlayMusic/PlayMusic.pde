@@ -10,7 +10,11 @@ import ddf.minim.ugens.*;
 Minim minim; 
 AudioPlayer song1;
 //
-void setup () {}//End setup
+void setup () {
+  //size(500, 600); //Remind you of Display Geometry
+  minim = new Minim(this); //load from data directory, loadFile should also load from project folder, like loadImage
+  song1 = minim.loadFile("");
+}//End setup
 //
 void draw() {}//End draw
 //
